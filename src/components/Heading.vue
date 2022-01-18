@@ -1,9 +1,9 @@
 <template>
   <header class="heading">
     <div class="img-wrapper">
-      <img src="../assets/note.svg" alt="Note" />
+      <img src="../assets/todo.png" alt="Note" />
     </div>
-    <div class="title">To-Do List</div>
+    <div class="title">Список задач</div>
   </header>
 </template>
 

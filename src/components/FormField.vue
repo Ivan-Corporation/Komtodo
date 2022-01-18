@@ -1,16 +1,16 @@
 <template>
   <div class="form-field">
-    <h1 class="title">~ Today I need to ~</h1>
+    <h1 class="title">Задачи на сегодня</h1>
     <form @submit.prevent="handleAddTodo(contentRef)" class="form-wrapper">
       <div class="form-input">
         <input
           ref="inputRef"
-          placeholder="Add new todo..."
+          placeholder="Добавить задачу..."
           v-model.trim="contentRef"
           autofocus
         />
       </div>
-      <button type="submit" class="submit-btn"><span>Submit</span></button>
+      <button type="submit" class="submit-btn"><span>Подтвердить</span></button>
     </form>
   </div>
 </template>
@@ -75,7 +75,7 @@ export default {
 
   input {
     width: 100%;
-    border-bottom: 3px dashed $primary-color;
+    border-bottom: 3px solid $primary-color;
     padding: 5px 0 3px;
     font-size: 18px;
 

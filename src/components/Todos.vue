@@ -24,7 +24,7 @@
   </ul>
   <div class="empty-todos" v-else-if="allTodos.length === 0">
     <font-awesome-icon icon="clipboard-check" class="icon" />
-    <span class="msg">Congrat, you have no more tasks to do</span>
+    <span class="msg">Фух! У вас нет задач</span>
   </div>
 </template>
 

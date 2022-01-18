@@ -1,32 +1,32 @@
 <template>
   <footer class="options" v-if="allTodosCount > 0">
-    <span>{{ activeTodosCount }} item left</span>
+    <span>{{ activeTodosCount }} Осталось</span>
 
     <div class="filters">
       <span
         class="option"
         :class="status === 'all' && 'active'"
         @click="handleSetStatus('all')"
-        >All</span
+        >Все</span
       >
       <span
         class="option"
         :class="status === 'active' && 'active'"
         @click="handleSetStatus('active')"
         v-if="activeTodosCount > 0 && doneTodosCount > 0"
-        >Active</span
+        >Активные</span
       >
       <span
         class="option"
         :class="status === 'completed' && 'active'"
         @click="handleSetStatus('completed')"
         v-if="doneTodosCount > 0 && activeTodosCount > 0"
-        >Completed</span
+        >Завершенные</span
       >
     </div>
 
     <span class="option" @click="handleClearCompleted" v-if="doneTodosCount > 0"
-      >Clear completed</span
+      >Убрать выполненные</span
     >
   </footer>
 </template>
